@@ -25,4 +25,4 @@ except ModuleNotFoundError:
 
 le = preprocessing.LabelEncoder()
 le.fit(list(''.join([i for i in your_name.lower() if i.isalpha()])))
-print( sum([ord(c) for c in le.classes_]) )
+print( "\n", your_name, sum([ord(c) for c in le.classes_]) )
